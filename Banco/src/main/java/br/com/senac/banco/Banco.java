@@ -11,9 +11,19 @@ package br.com.senac.banco;
 public class Banco {
 
     public static void main(String[] args) {
-       ContaBancaria conta1 = new ContaBancaria("Miguel");
-       
-       conta1.extratoBancario();
-       conta1.sacar(10);
+     
+     Conta viado = new Contacpf(657890909,"viado",19000);
+     Conta monster = new Contafs(978979,"monster",18000);
+  
+     viado.extratoBancario();
+     monster.extratoBancario();
+    
+    
+    
+    
+    
+    
+    } 
     }
-}
+    
+

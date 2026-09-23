@@ -9,15 +9,26 @@ package br.com.senac.banco;
  * @author miguel62977036
  */
 public class Conta {
-    public class ContaBancaria {
+   
     private double saldo;
     private String titular;
 
-    public ContaBancaria(String titular){
+    public Conta(String titular,Double saldo){
         this.titular = titular;
-        this.saldo = 0.00;
+        this.saldo = saldo;
     }
     
+    public String getTitular(){
+        return this.titular;
+    }
+    
+    public double getSaldo(){
+        return this.saldo;
+    }
+    
+    public void setTitular(String nome){
+        this.titular = titular;
+    }
     
     public void depositar(double valor){
         if(valor > 0){
@@ -38,9 +49,9 @@ public class Conta {
         
         public void extratoBancario(){
             System.out.println("Saldo: " + this.saldo);
-            
+            System.out.println("titular" + this.titular);
             
         }
             }
     
-}
+
